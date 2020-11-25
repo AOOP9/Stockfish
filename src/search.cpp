@@ -1076,11 +1076,6 @@ namespace {
             R = (823 + 67 * depth) / 256 + std::min(int(eval - beta) / 400, 3);
         break;
 #endif
-#ifdef ATOMIC
-        case ATOMIC_VARIANT:
-            R = (823 + 67 * depth) / 256 + std::min(int(eval - beta) / 400, 3);
-        break;
-#endif
         default:
             R = (1015 + 85 * depth) / 256 + std::min(int(eval - beta) / 191, 3);
         }
